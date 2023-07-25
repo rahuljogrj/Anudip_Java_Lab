@@ -1,3 +1,8 @@
+
+// Run this class file to perform all operation 
+
+
+
 package Online_food_order;
 
 import java.util.Scanner;
@@ -8,16 +13,12 @@ public class Main_food_class {
 	
 	static String a,b,c,d,e,f;
 	static int u,v,w,x,y,z,  sum=0;
-	
-//	static int sumu,sumv,sumw,sumx,sumy,sumz;
-
 	static Scanner sc = new Scanner(System.in);
-	
+	static String menu_item="", menu_item1="", menu_item2="", menu_item3="", menu_item4="", menu_item5="" ;
 	
 	public static void main(String[] args) {
 		
 //		main method to perform all operation
-
 	System.out.println("\n\n----------xxxx---------- RJ Dhaba ----------xxxx----------\n\n");
 		Main_food_class obj = new Main_food_class();
 		obj.select_menu();
@@ -29,7 +30,7 @@ public class Main_food_class {
 	public void select_menu() {
 		System.out.println("Menu card\n ");
 		System.out.println("1: Starter \n2: Veg Course \n3: Non-veg Course \n4: Deserts \n5: Drinks");
-		System.out.println("\nEnter number from list you want: ");
+		System.out.println("\nEnter number from menu you want: ");
 		int s = sc.nextInt();
 		
 		switch(s){
@@ -89,50 +90,55 @@ public class Main_food_class {
 		while(items>0) {
 			select = sc.next().charAt(0);
 			if(select == 'a' || select == 'A'){
-				System.out.println("a: "+ a);
+				 System.out.println("a: "+ a); 
 				 sum+=u;
-//				 sumu = sum;
+				 menu_item+=a +"\t\t\tRs. "+u+"\n";
 			}
 			else if(select == 'b' || select=='B') {
 				System.out.println("b: "+ b);
 				sum+=v;
-//				sumv = sum;
+				 menu_item1+=b +"\t\t\tRs. "+v+"\n";
 			}
 			else if(select == 'c' || select=='C') {
-				System.out.println("c: "+ c);
+				System.out.println("c: "+ c); 
 				sum+=w;
-//				sumw = sum;
+				 menu_item2+=c +"\t\t\tRs. "+w+"\n";
+
 			}
 			else if(select == 'd' || select=='D') {
-				System.out.println("d: "+ d);
+				System.out.println("d: "+ d); 
 				sum+=x;
-//				sumx = sum;
+				 menu_item3+=d +"\t\t\tRs. "+x+"\n";
+
 			}
 			else if(select == 'e' || select=='E') {
-				System.out.println("e: "+ e);
+				System.out.println("e: "+ e); 
 				sum+=y;
-//				sumy = sum;
+				 menu_item4+=e +"\t\t\tRs. "+y+"\n";
+
 			}
 			else if(select == 'f' || select=='F') {
 				System.out.println("f: "+ f);
 				sum+=z;
-//				sumz = sum;
+				 menu_item5+= f+"\t\t\tRs. "+z+"\n";
+				
 			}
 			else {
 				System.out.println("Sorry, not availble item....");
 			}
-			
-	
+
 			items--;
 		}
+		
 		
 	
 		System.out.println("\nItems added..\n");
 		System.out.println("|-----------------xxxxxxx-----------------|");
-		System.out.println("\nAmount is: "+sum);
+		System.out.println("\n\tAmount is: "+sum);
 		System.out.println("|-----------------xxxxxxx-----------------|");
 		
 		repeat();
+		
 		
 
 	}
@@ -152,7 +158,14 @@ public class Main_food_class {
 		}
 		else {
 			System.out.println("\n\n----------- Thank you... See you next time -----------");
+			System.out.println("Your order is =\n"+menu_item);
+			System.out.println(menu_item1);
+			System.out.println(menu_item2);
+			System.out.println(menu_item3);
+			System.out.println(menu_item4);
+			System.out.println(menu_item5);
 			System.out.println("The total Amount is: "+"Rs. "+sum+"/-");
+			
 		}
 		
 		
