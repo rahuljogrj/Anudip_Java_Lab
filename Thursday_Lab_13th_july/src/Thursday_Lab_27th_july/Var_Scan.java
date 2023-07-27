@@ -8,10 +8,13 @@ public class Var_Scan {
 	Scanner sc = new Scanner(System.in);
 	
 	 int i, j, grt, smt, size;
-	 int num, num1, num2, temp, newnum, reverse=0;
+	 int num, num1, num2, temp, newnum=0, reverse=0;
 	 char char1;
 	 int[] arr;
 
+	 
+	 
+	 
 	
 //	accept array elements from user 
 	public int[] accept() {
@@ -28,25 +31,6 @@ public class Var_Scan {
 	}
 	
 
-	
-	
-	// condition to find ascending and descending order of array
-	public void Array_ascen_descen() {
-		temp = arr[i];
-		arr[i]=arr[j];
-		arr[j] = temp;
-	}
-	
-	
-	
-	// Print Array one by one
-	public void Print_array() {
-		for(i=0; i<arr.length; i++) {
-			System.out.print("\t"+arr[i]);
-		}
-	}
-	
-	
 	
 	// return Integer value from user
 	public int input_array_size() {
@@ -74,4 +58,19 @@ public class Var_Scan {
 		char1 = sc.next().charAt(0);
 		return char1;
 	}
+	
+
+	
+	public void input_swapping() {
+		num1 = input_num1();
+		num2 = input_num2();
+	}
+	
+	
+	
+	
+	
+	
+	
+	
 }
