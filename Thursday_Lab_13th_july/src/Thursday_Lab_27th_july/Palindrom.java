@@ -25,12 +25,15 @@ public class Palindrom extends Array_program{
 		System.out.println("After reverse number is: "+reverse);
 		
 		if(newnum == reverse) {
-			System.out.println("Your number  is Palindrom.");
+			System.out.println("Your number is Palindrom.");
 		}
 		
 		else {
+			
 			System.out.println("\nYour number is not Palindrom.");
 		}
+		newnum=0;
+		reverse=0;
 		
 	}
 
