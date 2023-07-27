@@ -12,8 +12,7 @@ public class Swapping_no extends Var_Scan{
 		System.out.println("Enter 2 number: ");
 		
 		// num1, num2 are an user inputs integer value.
-		input_num1();
-		input_num2();
+		input_swapping();
 		
 		System.out.println("the values before swapping: "+ num1 +"\t\t"+ num2);
 		
@@ -34,8 +33,7 @@ public class Swapping_no extends Var_Scan{
 		System.out.println("Enter 2 number: ");
 		
 		// num1, num2 are an user inputs integer value.
-		input_num1();
-		input_num2();
+		input_swapping();
 		
 		System.out.println("the values before swapping: "+ num1 +"\t\t"+ num2);
 		
@@ -47,6 +45,9 @@ public class Swapping_no extends Var_Scan{
 	
 	}
 	
+	
+		
+		
 	
 
 }
