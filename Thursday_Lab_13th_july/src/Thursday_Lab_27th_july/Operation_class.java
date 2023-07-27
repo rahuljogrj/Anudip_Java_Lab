@@ -1,5 +1,5 @@
 
-// In this Thursday Lab we connect Multilevel inheritance and Single inheritance.
+// Example of Hybrid Inheritance. In this Thursday Lab we connect Multilevel inheritance and Single inheritance.
 // Multilevel inheritance:-   Var_scan (gp) ---> Array_program (p) ---> Palindrome (c)
 // Single inheritance:-   Var_scan (p)---> Swapping_no (c)
 
@@ -18,14 +18,13 @@ public class Operation_class {
 	
 	public static void operation_seq() {
 		
-		System.out.println("1: Array Methods (Greater number, Smaller number, Ascending, Descending order) \n2: Find Palindrome \n3: Swapping two numbers");
-		
-		
 		// create object for Palindrom because from Palindrom we can use Array_program class and Var_Scan class all function. 
 		Palindrom obj=new Palindrom();
 					
 		
 		do {
+
+			System.out.println("1: Array Methods (Greater number, Smaller number, Ascending, Descending order) \n2: Find Palindrome \n3: Swapping two numbers");
 			
 			System.out.println("\nChoice number from list: \n");
 			// ask to user which operation do you want perform
@@ -43,7 +42,7 @@ public class Operation_class {
 					obj.smt();
 					obj.ascen();
 					obj.descen();
-					System.out.println("---------xxxxx--------- Array methods End ---------xxxxx---------\n\n");
+					System.out.println("\n---------xxxxx--------- Array methods End ---------xxxxx---------\n\n");
 					break;
 				}
 				
@@ -75,7 +74,7 @@ public class Operation_class {
 			
 
 			// condition for repeat process.
-			System.out.println("\n\nDo you want perform another operation...(y / n): ");
+			System.out.println("\nDo you want perform another operation...(y / n): ");
 			obj.char1 = obj.input_char_1();
 			
 		}while(obj.char1 == 'y' || obj.char1=='Y');
